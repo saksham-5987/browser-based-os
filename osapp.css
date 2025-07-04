@@ -1,0 +1,272 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.main
+{
+width:100%;
+height: 100%;
+position: relative;
+overflow: hidden;
+position: relative;
+color: white;
+font-weight: bold;
+
+}
+.main video
+{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#windows-icon, #youtube-icon, #vscode-icon, #explorer-icon, #chrome-icon, #teams-icon, #system-tray {
+ height: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1;                 
+   
+    backdrop-filter: blur(3px);
+  }
+  .footer-left,.footer-right,.footer-center
+  {
+    display: flex;
+    gap:15px;
+    height: 100%;
+  }
+.footer-right img{
+    color: white;
+}
+
+.footer-center img,
+.footer-left img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain; 
+}
+#search-bar
+{
+    width:230px;
+    padding: 5px ;
+    display: flex;
+    justify-content: flex-start;
+  
+}
+#windows-icon:hover,
+#youtube-icon:hover,
+#vscode-icon:hover,
+#explorer-icon:hover,
+#chrome-icon:hover,
+#teams-icon:hover,
+#system-tray:hover {
+  background: rgba(0,0,0,0.1); 
+  backdrop-filter: blur(6px);
+  
+}
+
+#search-bar #in{
+    width: 100%;
+    border-radius: 20px;
+    background: #0000001a;
+}
+
+.footer-right img
+{
+    width:18px;
+    
+}
+
+#system-tray
+{
+    display: flex;
+    gap:15px;
+    margin-right: -10px;
+}
+
+   #right-tray
+   {
+    background: #222628;
+    width:330px;
+    height:350px;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding:20px;
+  display: flex;
+  flex-direction: column;
+   }
+   #fbottom
+   {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    width:80%;
+   }
+  #wifi-icon-right
+  {
+    display: flex;
+    width:100px;
+    
+  }
+  #bluetooth-icon-right-real
+  {
+   width:50%;
+   background-color: rgb(60, 161, 201);
+  }
+  #bluetooth-icon-right-seemore
+  {
+    width:50%;
+    background-color: rgb(60, 161, 201);
+}
+.right-click-main
+{
+  width:250px;
+  height: fit-content;
+  padding: 20px;
+  border: 1px solid rgba(28, 3, 3, 0.253);
+  background: rgba(0, 0, 0, 0.438); 
+  backdrop-filter: blur(6px);
+  color:#FFF;
+  font-size: 1rem;
+  font-weight:300;
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  border-radius: 10px;
+}
+.subrightmain
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+  .folder img{
+    width: 15px;
+    height: auto;
+  }
+  .folder {
+    display: flex;
+    justify-content: flex-start;
+    gap:6px;
+  }
+  .displayclass
+  {
+    display: block;
+  }
+  .displayclassright {
+    display: flex !important; 
+  }
+  
+#right-tray
+{
+ background: #222628;
+ width:fit-content;
+ height:350px;
+ border-radius: 10px;
+ margin-left: 10px;
+ padding:20px;
+flex-direction: column;
+gap:20px;
+position: absolute;
+display: none;
+z-index: 9999;
+}
+#fbottom{
+ display: flex;
+ flex-direction: column;
+ gap:30px;
+ padding: 5px;
+}
+#right-slider
+{
+    flex-direction: column;
+    gap:20px;
+    padding: 5px; 
+}
+
+#wifi-icon-right {
+    display: flex;
+    width: 100px;
+    height: 40px; 
+  }
+  #wifi-icon-right-sub,
+  #wifi-icon-right-see-more {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(31, 179, 205); 
+    border:1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #bluetooth-icon-right
+  {
+    display: flex;
+    width: 100px;
+    height: 40px;
+  }
+  #bluetooth-icon-right-real, #bluetooth-icon-right-seemore
+  {
+    width: 50%;
+    height: 100%;
+    background-color:  rgb(31, 179, 205); 
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+  }
+
+  #hwaijahajmode,#btsaver,#nl,#accessability
+  {
+    width: 100px;
+    height: 40px;
+    background-color:#2b2f32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+#pehla,#doosra,#change-br,#change-sound
+{
+    display: flex;
+    justify-content: space-between;
+    gap:5px;
+}
+#bottom-right
+{
+    width:100%;
+    
+    background-color: #1a1d1f
+;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+#bls,#rls
+{
+    display: flex;
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+}
